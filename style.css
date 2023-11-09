@@ -88,8 +88,9 @@ form label,
 form legend,
 form select,
 form option,
+input[type=submit],
 form nav a {
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
     font-weight: bold;
     font-variant: small-caps;
 }
