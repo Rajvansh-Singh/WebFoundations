@@ -46,7 +46,6 @@ main {
     margin: 0 auto;
     width: 65vw;
     background-color: hsl(120, 50%, 90%); /* Main background color */
-    height: 65vh;
 }
 
 main p {
@@ -71,16 +70,16 @@ form [type="email"],
 form [type="submit"],
 form select,
 form option {
-    width: 60%;
+    width: 50%;
     display: block;
-    height: 1.32em;
+    height: 2em;
 }
 
 /* Radio and Checkbox styling */
 form [type="radio"],
 form [type="checkbox"] {
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
 }
 
 /* Font styling */
@@ -90,14 +89,14 @@ form legend,
 form select,
 form option,
 form nav a {
-    font-size: 2 rem;
+    font-size: 1.5 rem;
     font-weight: bold;
     font-variant: small-caps;
 }
 
 /* Textarea styling */
 form textarea {
-    width: 60%;
+    width: 50%;
     display: block;
 }
 
@@ -110,7 +109,6 @@ aside {
     float: right;
     width: 25vw;
     background-color: hsl(180, 50%, 90%); /* Aside background color */
-    height: 65vh;
 }
 s
 aside ul {
