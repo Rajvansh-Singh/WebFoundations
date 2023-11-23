@@ -54,7 +54,7 @@ nav ul {
 
 nav li {
     display: inline;
-}
+} 
 
 nav a {
     border: 2px solid indigo;
@@ -69,7 +69,7 @@ nav a:hover {
     background-color: rgb(130, 0, 7);
 }
 section{
-    display:flex;
+    display:flex; 
     flex-direction: row;
     flex: 4 8%;
     flex-wrap: nowrap;
