@@ -1,23 +1,51 @@
 /* Student Name: Rajvansh Singh
    Student Number: 8862041 */
+    
 
+   html{
+    font: normal normal normal 20px/1.5 Verdana, Arial, Helvetica, sans-serif;
+   }
+   body{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsla(185,70%,65%,0.5);
+    display: flex;
+    flex-direction: column;
+   }
    .structural {
-    padding: 10px;
+    padding: 1rem;
     border: 1px solid #000;
-    margin: 10px;
+    margin: 1rem;
 }
 
 header {
     background-color: hsl(69, 87%, 47%); /* Header background color */
+    flex: 1 10%;
 }
 
 header h1 {
     color: brown;
-    font-size: 24px;
+    font-size: 2.5rem;
 }
-
+h2{
+    font-size: 2rem;
+    color:#3498db;
+}
 nav {
     background-color: #333;
+    flex: 1 5%;
+}
+ul {
+    list-style-type: circle;
+}
+
+li {
+    line-height: 1.4;
+    color: rgba(113, 131, 60, 0.8);
+}
+
+a {
+    color: rgba(21, 193, 49, 0.8);
 }
 
 nav ul {
@@ -34,17 +62,23 @@ nav a {
     font-family: Arial, sans-serif;
     background-color: cornsilk;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 1em;
 }
 
 nav a:hover {
     background-color: rgb(130, 0, 7);
 }
+section{
+    display:flex;
+    flex-direction: row;
+    flex: 4 8%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
 
 main {
-    float:left;
-    margin: 0 auto;
-    width: 65vw;
+    flex: 2 1 70%;
     background-color: hsl(120, 50%, 90%); /* Main background color */
 }
 
@@ -107,8 +141,7 @@ form fieldset {
 }
 
 aside {
-    float: right;
-    width: 25vw;
+    flex: 1 2 30%;
     background-color: hsl(180, 50%, 90%); /* Aside background color */
 }
 s
@@ -126,7 +159,7 @@ aside a:hover {
 }
 
 footer {
-    clear: both;
+    flex: 1 5%;
     background-color: hsl(240, 50%, 90%); /* Footer background color */
 }
 
@@ -141,7 +174,33 @@ footer {
 a:hover {
     color: #f00; /* Red font color on hover for links */
 }
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+figure{
+    border:1px solid black;
+}
+img{
+    width:80%;
+    height:80%;
+}
 
 footer p {
     font-size: 0.75em;
+}
+@media(max-width: 1200px){
+    html{
+        font-size: 15px;
+    }
+}
+@media(max-width : 600px){
+    html{
+        font-size: 10px;
+    }
+    #gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 }
